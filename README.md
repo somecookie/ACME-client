@@ -2,6 +2,10 @@
 
 This repository contains the code for the project 1 of the course [Network Security](https://netsec.ethz.ch/courses/netsec-2020/) at ETH Zurich. The goal of the project is to provide an [Automatic Certificate Management Environment (ACME)](https://tools.ietf.org/html/rfc8555) client. It is not in the scope of the project to implement an ACME server. You can use [Pebble](https://github.com/letsencrypt/pebble) for this purpose. This repository also provides a DNS server which is used to resolves the DNS queries of the ACME server.
 
+## Warning
+
+The code in this repository should not be used for any real world purpose. The author of the code is not responsible for any trouble caused by the use of this project.
+
 ## ACME server
 
 You can use Pebble as a basic ACME server. We provide a test root certificate at `pebble/certs/pebble.minica.pem` and a config file at `pebble/config/pebble-config.json`.
