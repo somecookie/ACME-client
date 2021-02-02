@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "[...] Copying files to src"
+mkdir -p $GOPATH/src/gitlab.inf.ethz.ch/PRV-PERRIG/netsec-course/project-acme/netsec-2020-acme/rferreira-acme-project
+cp -r . $GOPATH/src/gitlab.inf.ethz.ch/PRV-PERRIG/netsec-course/project-acme/netsec-2020-acme/rferreira-acme-project
+
+echo "[...] Installing libraries"
+go get github.com/jessevdk/go-flags
+go get github.com/sirupsen/logrus
+go get github.com/miekg/dns
+
+echo "[...] Building"
+go build main.go
